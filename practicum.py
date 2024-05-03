@@ -70,7 +70,7 @@ def machine_learning():
             elif uploaded_file.name == "housing23.csv":
                 st.write("Файл housing23.csv был загружен")
                 model_regression = pickle.load(open('TweedieRegressor.pkl', 'rb'))
-                data_regression = pd.read_csv('C:/Users/ZALMAN/Downloads/housing23.csv')
+                data_regression = pd.read_csv('housing23.csv')
                 y = data_regression["price"]
                 X = data_regression.drop(["price"], axis=1)
                 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,random_state=0)
