@@ -6,8 +6,6 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import r2_score
 from sklearn.metrics import log_loss, roc_auc_score, confusion_matrix, classification_report
 import numpy as np;
-from sklearn.preprocessing import StandardScaler
-
 
 data_regression = pd.read_csv('housing23.csv')
 
